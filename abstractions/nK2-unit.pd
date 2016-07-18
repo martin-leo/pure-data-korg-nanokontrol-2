@@ -1,0 +1,45 @@
+#N canvas 442 294 450 569 10;
+#X obj -4 209 outlet;
+#X obj -44 209 outlet;
+#X obj -84 209 outlet;
+#X obj -124 209 outlet;
+#X obj -164 209 outlet;
+#X obj 32 16 inlet;
+#X obj 50 106 vsl 15 64 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 3919 1;
+#X floatatom 32 86 5 0 0 0 - - -, f 5;
+#X floatatom 32 177 5 0 0 0 - - -, f 5;
+#X text 21 104 S;
+#X text 21 131 M;
+#X text 21 158 R;
+#X obj 35 71 hsl 32 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3076 1;
+#X text -147 -4 1: potentiomètre / 2: slider / 3: S / 4: M / 5: R
+;
+#X obj 32 39 route 1 2 3 4 5;
+#X obj 98 87 nK2-bouton;
+#X obj 31 132 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 31 157 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 31 104 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 136 115 nK2-bouton;
+#X obj 124 199 nK2-bouton;
+#X connect 5 0 14 0;
+#X connect 6 0 8 0;
+#X connect 7 0 4 0;
+#X connect 8 0 3 0;
+#X connect 12 0 7 0;
+#X connect 14 0 12 0;
+#X connect 14 1 6 0;
+#X connect 14 2 15 0;
+#X connect 14 3 19 0;
+#X connect 14 4 20 0;
+#X connect 15 0 18 0;
+#X connect 16 0 1 0;
+#X connect 17 0 0 0;
+#X connect 18 0 2 0;
+#X connect 19 0 16 0;
+#X connect 20 0 17 0;
+#X coords 0 -1 1 1 50 120 1 20 71;

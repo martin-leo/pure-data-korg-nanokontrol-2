@@ -1,0 +1,20 @@
+#N canvas 202 211 961 688 10;
+#X obj 247 109 t f f, f 6;
+#X obj 247 157 pack \$1 \$2;
+#X msg 247 133 1;
+#X floatatom 100 114 5 0 0 0 - - -, f 5;
+#X msg 199 109 set \$1;
+#X obj 227 44 inlet;
+#X obj 247 181 outlet;
+#X obj 290 43 inlet;
+#X text 137 17 permet d'empaqueter une donnée dans une liste avec
+un numéro de routage;
+#X connect 0 0 2 0;
+#X connect 0 1 1 1;
+#X connect 1 0 6 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X connect 5 0 0 0;
+#X connect 7 0 4 0;
+#X coords 0 -1 1 1 32 28 1 100 100;

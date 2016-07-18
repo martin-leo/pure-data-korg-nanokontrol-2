@@ -1,0 +1,19 @@
+#N canvas 1 84 607 388 10;
+#X obj 72 -66 == 0;
+#X obj 110 -65 == 127;
+#X obj 72 -23 spigot;
+#X obj 118 -23 spigot;
+#X msg 118 3 1;
+#X obj 78 -114 inlet;
+#X obj 116 66 outlet;
+#X text -13 -176 permet de contrôler un interrupteur à partir d'un
+bouton envoyant des valeurs de 0 à 127;
+#X connect 0 0 2 0;
+#X connect 0 0 2 1;
+#X connect 1 0 3 0;
+#X connect 1 0 3 1;
+#X connect 2 0 6 0;
+#X connect 3 0 4 0;
+#X connect 4 0 6 0;
+#X connect 5 0 0 0;
+#X connect 5 0 1 0;
